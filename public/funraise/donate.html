@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now - FUNRaise</title>
+    <link rel="stylesheet" href="campaign.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <img src="Image/logo.png" alt="Logo" class="logo-img">
+                <span>FUNRaise</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="homepage.html#campaigns">Campaigns</a></li>
+                <li><a href="homepage.html#about">About</a></li>
+                <li><a href="depositopay.html">Deposit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Donate Section -->
+    <section class="donate-section">
+        <div class="container">
+            <h2>Donate to the Campaign</h2>
+            <p>Your contribution makes a difference. Fill in the details below to proceed with your donation.</p>
+            <form class="donation-form">
+                <label for="donor-name">Name:</label>
+                <input type="text" id="donor-name" name="donor-name" placeholder="Your Name" required>
+
+                <label for="donation-amount">Amount (USD):</label>
+                <input type="number" id="donation-amount" name="donation-amount" placeholder="Enter Amount" required>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="digital-wallet">Digital Wallet (e.g., PayPal, GPay)</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="DofunCoin">DofunCoin</option>
+                </select>
+
+                <div id="payment-details">
+                    <!-- Credit Card Fields -->
+                    <div id="credit-card-fields" class="payment-option">
+                        <label for="cc-number">Credit Card Number:</label>
+                        <input type="text" id="cc-number" name="cc-number" placeholder="Enter Card Number">
+                        
+                        <label for="cc-expiry">Expiry Date:</label>
+                        <input type="text" id="cc-expiry" name="cc-expiry" placeholder="MM/YY">
+                        
+                        <label for="cc-cvv">CVV:</label>
+                        <input type="text" id="cc-cvv" name="cc-cvv" placeholder="CVV">
+                    </div>
+
+                    <!-- Digital Wallet Fields -->
+                    <div id="digital-wallet-fields" class="payment-option">
+                        <label for="wallet-email">Wallet Email:</label>
+                        <input type="email" id="wallet-email" name="wallet-email" placeholder="Enter Wallet Email">
+                    </div>
+
+                    <!-- Bank Transfer Fields -->
+                    <div id="bank-transfer-fields" class="payment-option">
+                        <p>Please transfer to the following account:</p>
+                        <ul>
+                            <li>Bank Name: FUNRaise Bank</li>
+                            <li>Account Number: 123456789</li>
+                            <li>SWIFT Code: FUNR123</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button type="submit">Donate Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 FUNRaise. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle payment fields
+        const paymentMethodSelect = document.getElementById('payment-method');
+        const paymentOptions = document.querySelectorAll('.payment-option');
+
+        paymentMethodSelect.addEventListener('change', (e) => {
+            paymentOptions.forEach(option => option.style.display = 'none'); // Hide all options
+            const selectedOption = document.getElementById(`${e.target.value}-fields`);
+            if (selectedOption) {
+                selectedOption.style.display = 'block'; // Show the selected option
+            }
+        });
+
+        // Hide all payment details initially
+        document.addEventListener('DOMContentLoaded', () => {
+            paymentOptions.forEach(option => option.style.display = 'none');
+        });
+    </script>
+</body>
+</html>
