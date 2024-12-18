@@ -16,16 +16,20 @@ body {
 }
 /* Default Navbar */
 .navbar {
-    position: sticky;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    position: relative; /* Posisi navbar tetap di atas konten */
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
-    background-color: rgba(51, 51, 51, 1); /* Solid background by default */
+    background-color: #034383;   /* Transparansi 50% */
     color: white;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease; /* Smooth transition for background */
-    padding: 0; /* Hapus padding agar kontainer mengisi penuh */
+    box-shadow: none; /* Hapus bayangan jika tidak diinginkan */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    padding: 10px 0;
 }
 
 
@@ -82,16 +86,7 @@ body {
 }
 
 /* Hero Section */
-.hero {
-    position: relative;
-    height: 100vh;
-    background: url('../Image/study.jpeg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
+
 
 .hero .overlay {
     position: absolute;
@@ -349,7 +344,6 @@ body {
 .hidden{
     display: none;
   }
-
 .line {
     width: 100px;
     height: 4px;
