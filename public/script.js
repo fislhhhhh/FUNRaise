@@ -3,6 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebas
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js";
 
+
 // Konfigurasi Firebase
 const firebaseConfig = {
     apiKey: "AIzaSyCyMp66UDY1H6DELyhZxo4DidzGB231g9Q",
@@ -18,6 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const database = getDatabase(app);
+
 
 // Debugging inisialisasi
 console.log("Firebase telah diinisialisasi.");
@@ -83,3 +85,11 @@ auth.onAuthStateChanged((user) => {
     console.log("Tidak ada pengguna yang sedang login.");
   }
 });
+
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+  // Initialize Firebase
+  // Initialize Firebase
