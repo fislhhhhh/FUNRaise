@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
 
 
+=======
+/* General Styles */
+>>>>>>> Stashed changes
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +11,7 @@ body {
     box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
 
 /* Section Styles */
 .container {
@@ -14,6 +19,46 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+=======
+.container1 {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+}
+.container1 h1{
+    height: 10%;
+    margin-bottom: 0 !important;
+    color: #034383;
+}
+.upperDepo{
+    background-color: #034383;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+}
+.bottomDepo{
+    
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('../Image/study.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+>>>>>>> Stashed changes
 /* Default Navbar */
 .navbar {
     position: sticky;
@@ -82,6 +127,7 @@ body {
 }
 
 /* Hero Section */
+<<<<<<< Updated upstream
 .hero {
     position: relative;
     height: 100vh;
@@ -92,6 +138,9 @@ body {
     color: white;
     text-align: center;
 }
+=======
+
+>>>>>>> Stashed changes
 
 .hero .overlay {
     position: absolute;
@@ -348,6 +397,7 @@ body {
 
 .hidden{
     display: none;
+<<<<<<< Updated upstream
   }
 
 .line {
@@ -418,3 +468,6 @@ body {
 .form-group button:hover {
     background-color: #003d80;
 }
+=======
+  }
+>>>>>>> Stashed changes
