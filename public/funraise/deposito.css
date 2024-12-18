@@ -23,15 +23,166 @@ body {
     margin-bottom: 0 !important;
     color: #034383;
 }
+.uppestDepo{
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.uppestDepo .addDepo{
+    color: #034383;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    height: 100%;
+    align-items: end;
+}
+.uppestDepo .addDepo p{
+    margin: 0;
+    padding: 0 !important;
+    margin-bottom: 8px;
+}
+.addDepo img{
+    margin: 0;
+    padding: 0;
+    height: 20%;
+    width: 20%;
+}
 .upperDepo{
-    background-color: #034383;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 40%;
+    height: 35%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background:linear-gradient(to bottom,#034383,#2277b4);
+    border-radius: 12px; /* Membuat sudut melengkung */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+.upperDepo span{
+    color: #ffb001;
+}
+.imageDepo{
+    height: 60%;
+    margin: 20px;
+    padding: 0;
+}
+.depoPart, .dofunPart {
+    padding: 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: start;
+    align-items: center;
+
+    color: #fff;
+    font-family: Arial, sans-serif; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+
+.depoImg, .dofunImg{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: start;
+    justify-content: center ;
+}
+.depoImg h2, .dofunImg h2{
+    color: white;
+    margin-bottom: 1px;
+    margin: 0;
+    padding: 0;
+}
+.depoImg .portValue, .dofunImg .dofunValue{
+    margin-bottom: 0;
+}
+.depoImg .portPercent, .dofunImg .dofunPercent{
+    margin: 0;
+    padding: 0;
+}
+.dofunImg .dofunImg img{
+    height: 100% !important;
+    align-items: start;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+}
+.depoPart .portValue, .dofunPart .dofunImg .dofunValue {
+    font-size: 56px;
+    margin: 0;
+    padding: 0;
 }
 .bottomDepo{
-    
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.netAsset, .depoHist{
+    width: 49%;
+    height: 100%;
+    border-radius: 12px; 
+}
+.netAsset h2, .depoHist h2{
+    display: flex;
+    margin-left: auto;
+    color: #034383;
+    margin-bottom: 10px;
+}
+.netBox, .historyList {
+    background-color:#ffb001 ;/* Gradien dari kuning tua ke terang */
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    padding: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 12px;
+
+    /* Dekorasi tambahan */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Bayangan lembut */
+    border: 2px solid #e09e00; /* Border tipis dengan warna yang lebih tua */
+    color: #333; /* Warna teks yang kontras */
+    font-family: 'Arial', sans-serif; /* Font modern */
+    font-weight: 500;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animasi halus */
+}
+
+.netBox .netPart{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 20%;
+    color: #034383;
+}
+.netPartTotal{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 20%;
+    color: #034383;
+    margin-top: 12px;
+}
+.investedTotalValue{
+    margin-left: auto;
+}
+.totalTotal{
+    font-weight: bolder;
+}
+.totalTotalValue{
+    margin-left: auto;
+    font-weight: bolder;
 }
 .hero {
     position: relative;
