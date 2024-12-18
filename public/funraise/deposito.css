@@ -47,7 +47,8 @@ body {
 .addDepo img{
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 20%;
+    width: 20%;
 }
 .upperDepo{
     display: flex;
@@ -115,7 +116,7 @@ body {
     padding: 0;
 }
 .depoPart .portValue, .dofunPart .dofunImg .dofunValue {
-    font-size: 60px;
+    font-size: 56px;
     margin: 0;
     padding: 0;
 }
