@@ -137,12 +137,12 @@ form.sign-in-form {
 
 .btn {
   width: 150px;
-  background-color: #034383;
+  background-color: rgba(3, 67, 131, 0.5);;
   border: none;
   outline: none;
   height: 49px;
   border-radius: 49px;
-  color: #fbc613;
+  color: white;
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
@@ -408,8 +408,8 @@ form.sign-in-form {
     border: none;
     line-height: 55px;
     font-weight: 600;
-    font-size: 1.1rem;
-    color: #fbc613;
+    font-size: 1.2rem;
+    color: #034383;
     padding: 0 0.4 rem;
   }
   

@@ -14,18 +14,19 @@ body {
 
 /* Default Navbar */
 .navbar {
-    position: sticky;
+    position: fixed; /* Posisi navbar tetap di atas konten */
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
-    background-color: rgba(51, 51, 51, 1); /* Solid background by default */
+    background-color: rgba(3, 67, 131, 0.5);   /* Transparansi 50% */
     color: white;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease; /* Smooth transition for background */
-    padding: 0; /* Hapus padding agar kontainer mengisi penuh */
+    box-shadow: none; /* Hapus bayangan jika tidak diinginkan */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    padding: 10px 0;
 }
-
 
 /* Transparent Navbar */
 .navbar.scrolled {
@@ -128,7 +129,7 @@ body {
 }
 
 #sign-in {
-    background-color: #f04e23; /* Warna tombol */
+    background-color: #034383; /* Warna tombol */
     color: white; /* Warna teks */
     border: none; /* Hapus border */
     padding: 10px 20px; /* Perbesar tombol dengan padding */
@@ -146,7 +147,7 @@ body {
 }
 
 #sign-in:hover {
-    background-color: #d43d20; /* Warna tombol saat hover */
+    background-color: #fbc613; /* Warna tombol saat hover */
 }
 
 /* Campaigns Section */
@@ -203,7 +204,7 @@ body {
 .campaign-item button {
     margin: 10px;
     padding: 10px 15px;
-    background-color: #f04e23;
+    background-color: #034383;
     color: white;
     border: none;
     border-radius: 5px;
@@ -212,14 +213,14 @@ body {
 }
 
 .campaign-item button:hover {
-    background-color: #d43d20;
+    background-color: #fbc613;
 }
 
 
 /* Footer */
 .footer {
     text-align: center;
-    background: #333;
+    background: #034383;
     color: white;
     padding: 20px 0;
 }
@@ -227,7 +228,7 @@ body {
 .line {
     width: 60px;
     height: 5px;
-    background-color: #f04e23; /* Warna oranye */
+    background-color: #034383; /* Warna oranye */
     margin: 0 auto 20px; /* Margin untuk posisi tengah */
     border-radius: 10px;
 }
@@ -271,13 +272,13 @@ body {
 .about h2 {
     margin-bottom: 30px;
     font-size: 2em;
-    color: #333;
+    color: #034383;
 }
 
 .about p {
     margin-bottom: 40px;
     font-size: 1em;
-    color: #666;
+    color: #034383;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
