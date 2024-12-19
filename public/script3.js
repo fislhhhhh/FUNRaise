@@ -52,6 +52,7 @@ async function calculateTotalDonations(uid) {
             }
             if (data.paymentMethod === "DofunCoin"){
                 dofun+=1;
+                perctotal-= data.donationAmount;
             }
         });
 
@@ -133,7 +134,7 @@ async function calculateTotalDepo(uid) {
         });
 
        let totalasss = totalDepo + totalDepo *0.03;
-       let perctotal = totalDepo*0.03;
+       let perctotal = totalasss*0.03;
         const totalASS = document.getElementById("assetTotal");
         if (totalASS) {
             totalASS.textContent = `${totalasss.toLocaleString("id-ID") }`;

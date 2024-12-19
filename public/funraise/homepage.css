@@ -142,6 +142,18 @@ body {
     display: inline-block; /* Pastikan tombol mengikuti ukuran teks */
 }
 
+#sign-out {
+    background-color: #f04e23; /* Warna tombol */
+    color: white; /* Warna teks */
+    border: none; /* Hapus border */
+    padding: 10px 20px; /* Perbesar tombol dengan padding */
+    border-radius: 5px; /* Berikan sudut melengkung */
+    cursor: pointer; /* Tambahkan efek pointer */
+    font-size: 1em; /* Perbesar teks */
+    text-align: center; /* Pusatkan teks */
+    display: inline-block; /* Pastikan tombol mengikuti ukuran teks */
+}
+
 .nav-links {
     display: flex;
     align-items: center; /* Pastikan tombol sejajar secara vertikal */
@@ -222,7 +234,7 @@ body {
 /* Footer */
 .footer {
     text-align: center;
-    background: #034383;
+    background: #333;
     color: white;
     padding: 20px 0;
 }
