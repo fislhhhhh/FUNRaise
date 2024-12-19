@@ -84,23 +84,6 @@
     </footer>
     <script type="module" src="../script2.js"></script>
 
-    <script>
-        // JavaScript to toggle payment fields
-        const paymentMethodSelect = document.getElementById('payment-method');
-        const paymentOptions = document.querySelectorAll('.payment-option');
-
-        paymentMethodSelect.addEventListener('change', (e) => {
-            paymentOptions.forEach(option => option.style.display = 'none'); // Hide all options
-            const selectedOption = document.getElementById(`${e.target.value}-fields`);
-            if (selectedOption) {
-                selectedOption.style.display = 'block'; // Show the selected option
-            }
-        });
-
-        // Hide all payment details initially
-        document.addEventListener('DOMContentLoaded', () => {
-            paymentOptions.forEach(option => option.style.display = 'none');
-        });
-    </script>
+   
 </body>
 </html>
