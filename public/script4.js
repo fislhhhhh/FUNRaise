@@ -13,6 +13,7 @@ const firebaseConfig = {
     messagingSenderId: "49376417232",
     appId: "1:49376417232:web:fb2315061b0cf7881715d5"
   };
+
 // Inisialisasi Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
@@ -28,19 +29,17 @@ onAuthStateChanged(auth, (user) => {
 });
 
 // Form Handling
-const donationForm = document.querySelector(".donation-form");
+const depoForm = document.querySelector(".deposit-form");
 
-donationForm.addEventListener("submit", async (event) => {
+depoForm.addEventListener("submit", async (event) => {
     event.preventDefault(); // Cegah reload halaman
 
-    const donorName = document.getElementById("donor-name").value;
-    const donationAmount = document.getElementById("donation-amount").value;
-    const paymentMethod = document.getElementById("payment-method").value;
+    const depoAmount = document.getElementById("nominal").value;
+    const depoMethod = document.getElementById("bank").value;
 
-    const donationData = {
-        donorName: donorName,
-        donationAmount: parseFloat(donationAmount),
-        paymentMethod: paymentMethod,
+    const depoData = {
+        depoAmount: depoAmount,
+        depoMethod: depoMethod,
         timestamp: new Date().toISOString(),
     };
 
@@ -50,12 +49,12 @@ donationForm.addEventListener("submit", async (event) => {
             return;
         }
       
-        const userDonationsRef = collection(db, `users/${auth.currentUser.uid}/donations`);
-        await setDoc(doc(userDonationsRef), donationData);
-        alert("Donation recorded successfully!");
-        donationForm.reset(); // Reset form
+        const userDonationsRef = collection(db, `users/${auth.currentUser.uid}/Deposito`);
+        await setDoc(doc(userDonationsRef), depoData);
+        alert("Deposito recorded successfully!");
+        depoForm.reset(); // Reset form
     } catch (error) {
-        console.error("Error saving donation:", error);
-        alert("Failed to save donation. Please try again.");
+        console.error("Error saving deposito:", error);
+
     }
 });

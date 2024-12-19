@@ -30,7 +30,7 @@
                 <h1>YOUR DEPOSITO</h1>
                 <div class="addDepo">
                     <p>Add Deposito</p>
-                    <img src="Image/plus.png" class="imageDepo" alt="">
+                    <img src="Image/plus.png" class="imageDepo" alt="addDepo" onclick="location.href='depositopay.html';">
                 </div>
             </div>
             <div class="upperDepo">
@@ -38,8 +38,8 @@
                     <img src="Image/port.png" class="imageDepo" alt="">
                     <div class="depoImg">
                         <h2>Portfolio Value</h2>
-                        <p class="portValue" id="portValue">Rp98000</p>
-                        <p class="portPercent" id="portPercent">+ Rp98000 <span>(+54%)</span></p>
+                        <p class="portValue" id="portValue"></p>
+                        <p class="portPercent" id="portPercent"><span></span></p>
                     </div>
                         
                 </div>
@@ -47,8 +47,8 @@
                     <img src="Image/dofun.png" class="imageDepo" alt="">
                     <div class="dofunImg">
                         <h2>DOFun Coin</h2>
-                        <p class="dofunValue" id="dofunValue">23000</p>
-                        <p class="dofunPercent" id="dofunPercent">+98 <span>(+54%)</span></p>
+                        <p class="dofunValue" id="dofunValue"></p>
+                        <p class="dofunPercent" id="dofunPercent"> <span></span></p>
                     </div>
                     
                 </div>
@@ -59,11 +59,11 @@
                     <div class="netBox">
                         <div class="netPart">
                             <p class="investedTotal">Invested </p>
-                            <p class="investedTotalValue"> 96000</p>
+                            <p class="investedTotalValue" id="investTotal"> </p>
                         </div>
                         <div class="netPart">
                             <p class="investedTotal">Asset Gain/Loss </p>
-                            <p class="investedTotalValue">+ 2000</p>
+                            <p class="investedTotalValue" id="gain"></p>
                         </div>
                         <div class="netPart">
                             <p class="investedTotal">Forex</p>
@@ -71,22 +71,99 @@
                         </div>
                         <div class="netPartTotal">
                             <p class="totalTotal">Total Asset</p>
-                            <p class="totalTotalValue">98000</p>
+                            <p class="totalTotalValue" id="assetTotal"></p>
                         </div>
                             
                     </div>
                 </div>
                 <div class="depoHist" id="depoHist">
-                    <h2>Past Transaction</h2>
-                    <div class="historyList" id="historyList">
-                        <div class="historyBox">
-                            <img src="" alt="">
-                            <div class="transDetail"  >
-                                <p class="displayVia"></p>
-                                <p class="displayDate"></p>
-                            </div>
-                            <p class="plusHistory"></p>
-
+                    <h2>Last Transaction</h2>
+                    <div class="netBox" id="historyList">
+                        <div class="netPart">
+                            <p class="investedTotal">Deposito Bank</p>
+                            <p class="investedTotalValue" id="depoBank"></p>
+                        </div>
+                        <div class="netPart">
+                            <p class="investedTotal">Deposito Time</p>
+                            <p class="investedTotalValue" id="dpTime"></p>
+                        </div>
+                        <div class="netPartTotal">
+                            <p class="totalTotal" >Deposito Amount</p>
+                            <p class="totalTotalValue" id="depoAm"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <header id="home" class="hero">
+        <div class="container1">
+            <div class="uppestDepo">
+                <h1>YOUR DONATION</h1>
+                <div class="addDepo">
+                   
+                </div>
+            </div>
+            <div class="upperDepo">
+                <div class="depoPart" id="depoPart">
+                    <img src="Image/Donation.png" class="imageDepo" alt="">
+                    <div class="depoImg">
+                        <h2>Donation Total</h2>
+                        <p class="portValue" id="donValue"></p>
+                        <p class="portPercent" id="donPer"> <span></span></p>
+                    </div>
+                        
+                </div>
+                <div class="dofunPart" id="dofunPart">
+                    <img src="" class="imageDepo" alt="">
+                    <div class="dofunImg">
+                        <h2></h2>
+                        <p class="dofunValue" id="dofunValue"></p>
+                        <p class="dofunPercent" id="dofunPercent"><span></span></p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="bottomDepo">
+                <div class="netAsset" id="netAsset">
+                    <h2 class="netTitle">Donation Detail</h2>
+                    <div class="netBox">
+                        <div class="netPart">
+                            <p class="investedTotal">Donation Avg </p>
+                            <p class="investedTotalValue" id="donAvg"> </p>
+                        </div>
+                        <div class="netPart">
+                            <p class="investedTotal">People Helped</p>
+                            <p class="investedTotalValue" id="donTimes"></p>
+                        </div>
+                        <div class="netPart">
+                            <p class="investedTotal">Rank</p>
+                            <p class="investedTotalValue">-</p>
+                        </div>
+                        <div class="netPartTotal">
+                            <p class="totalTotal" >DofunCoin Used</p>
+                            <p class="totalTotalValue" id="doFun"></p>
+                        </div>
+                            
+                    </div>
+                </div>
+                <div class="depoHist" id="depoHist">
+                    <h2>Last Transaction</h2>
+                    <div class="netBox" id="historyList">
+                        <div class="netPart">
+                            <p class="investedTotal">Donation Name </p>
+                            <p class="investedTotalValue" id="donName"> </p>
+                        </div>
+                        <div class="netPart">
+                            <p class="investedTotal">Payment Method</p>
+                            <p class="investedTotalValue" id="donMet"></p>
+                        </div>
+                        <div class="netPart">
+                            <p class="investedTotal">Donation Time</p>
+                            <p class="investedTotalValue" id="dlTime"></p>
+                        </div>
+                        <div class="netPartTotal">
+                            <p class="totalTotal" >Donation Amount</p>
+                            <p class="totalTotalValue" id="donAm"></p>
                         </div>
                     </div>
                 </div>
@@ -95,95 +172,30 @@
 
     <!-- Features Section -->
     <section id="features" class="features">
-        <h2>Our Features</h2>
-        <div class="line"></div>
-        <div class="feature-list">
-            <a href="Frontend/Recc/Recc.html" class="feature-item">
-                <img src="Image/recc.png" alt="Personalized Icon" class="feature-icon">
-                <h3>Personalized Recommendations</h3>
-                <p>Find the best learning spaces based on your preferences.</p>
-            </a>
-            <a href="#ranking" class="feature-item">
-                <img src="Image/ranking.png" alt="Ranking Icon" class="feature-icon">
-                <h3>Ranking Recommendations</h3>
-                <p>View spaces ranked by user reviews and relevance.</p>
-            </a>
-            <a href="#maps" class="feature-item">
-                <img src="Image/map.png" alt="Map Icon" class="feature-icon">
-                <h3>Interactive Maps</h3>
-                <p>Discover locations with a user-friendly interactive map.</p>
-            </a>
-            <a href="#booking" class="feature-item">
-                <img src="Image/booking.png" alt="Booking Icon" class="feature-icon">
-                <h3>Booking & Reservation</h3>
-                <p>Book your favorite spots with just one click.</p>
-            </a>
-            <a href="#collaboration" class="feature-item">
-                <img src="Image/collab.png" alt="Filter Icon" class="feature-icon">
-                <h3>Collaborative Learning</h3>
-                <p>Connect and learn with others. <strong>Coming Soon!</strong></p>
-            </a>
-            <a href="#ai-powered" class="feature-item">
-                <img src="Image/AI.png" alt="Profile Icon" class="feature-icon">
-                <h3>AI Powered</h3>
-                <p>Discover smarter learning spaces. <strong>Coming Soon!</strong></p>
-            </a>
-        </div>
+        
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2>About Rekby</h2>
-            <div class="line"></div>
-            <p>
-                Rekby is your ultimate platform for finding the best learning environments tailored to your preferences, 
-                specifically in Jatinangor. Whether you're looking for a quiet cafe, a vibrant coworking space, 
-                a collaborative library, or other unique learning spots, we've got you covered. Our platform is constantly evolving and improving 
-                to provide even better recommendations and experiences for all learners.
-            </p>
-            
-        </div>
+        
+        
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <div class="line"></div>
-            <div class="contact-content">
-                <div class="contact-image">
-                    <img src="Image/me.png" alt="Contact Us">
-                </div>
-                <div class="contact-text">
-                    <p>
-                        Thank You for Visiting Rekby!
-                    </p>
-                    <p>
-                        We are dedicated to helping you find the best learning spaces tailored to your preferences, especially in Jatinangor. Your support and feedback mean a lot to us as we continue to improve and expand our platform.
-                    </p>
-                    <p>
-                        Feel free to connect with us on our social media channels or through email. Together, let's make learning more accessible and enjoyable for everyone!
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/faishaltr_/?hl=en">
-                            <img src="Image/ig.png" alt="Instagram">
-                        </a>
-                        <a href="mailto:emfaishalpe@gmail.com" >
-                            <img src="Image/gmail.png" alt="Email">
-                        </a>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </section>
     
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2024 Rekby. All Rights Reserved.</p>
+        <p>© 2024 FUNRaise. All Rights Reserved.</p>
     </footer>
 
-    <script src="Frontend/homepage.js"></script>
+
+  
+    <script type="module" src="../script3.js"></script>
     
 </body>
 </html>

@@ -529,3 +529,7 @@ body {
 .hidden{
     display: none;
   }
+
+  .portPercent , .dofunPercent{
+    color:#ffb001
+  }
